@@ -1,7 +1,5 @@
 package com.cts.generic;
 
-
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
