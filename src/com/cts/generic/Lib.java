@@ -3,6 +3,7 @@ package com.cts.generic;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.util.Properties;
 
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -10,7 +11,20 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Lib {
-
+	// getting data from .properties file
+	public static String getPpt(String path,String key){
+		String v="";
+		try{
+			Properties p=new Properties();
+			p.load(new FileInputStream(path));
+			v=p.getProperty(key);
+		}
+		catch(Exception e){
+		}
+		return v;
+	}	
+	
+	// get cell value 
 	public static String getCellValue(String path, String sheet, int r, int c){
 		String v = "";
 		try{
@@ -22,6 +36,7 @@ public class Lib {
 	return v;
 	}
 	
+	//write to a cell
 	public static void writeToPresentCell(String path, String sheet, int r, int c, String value ){
 		try{
 		Workbook wb=WorkbookFactory.create(new FileInputStream(path));
@@ -32,6 +47,7 @@ public class Lib {
 		}
 	}
 	
+	//write to a cell  :: another method 
 	public static void writeToCell(String path, String sheet, int r, int c, String value ){
 		try{
 		Workbook wb = WorkbookFactory.create(new FileInputStream(path));
@@ -43,7 +59,8 @@ public class Lib {
 			
 		}
 	}
-		
+	
+	// creating a sheet to write  	
 		public static void tutorialsPoint()throws Exception {
 		      //Create Blank workbook
 		      XSSFWorkbook workbook = new XSSFWorkbook();

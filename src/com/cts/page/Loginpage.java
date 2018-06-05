@@ -3,10 +3,11 @@ package com.cts.page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class Loginpage {
-WebDriver driver;
+
 
 @FindBy(xpath = "//input[@id = 'FromTag']")
 private WebElement from;
@@ -18,7 +19,10 @@ private WebElement to;
 private WebElement DepartDate;
 
 @FindBy(xpath = "(//a[@title = 'Next'])[2]")
-private WebElement next;
+private WebElement arrowButton;
+
+@FindBy(xpath = "(//div/span[@class ='ui-datepicker-month' ])[2]")
+private WebElement datepickerHeader;
 
 @FindBy(xpath = "//input[@id = 'DepartDate']")
 private WebElement adults;
@@ -33,28 +37,35 @@ private WebElement fclass;
 @FindBy(xpath = "//input[@id = 'SearchBtn']")
 private WebElement searchBtn;
 
-Loginpage(WebDriver driver){
-	this.driver = driver;
+public Loginpage(WebDriver driver){
+	PageFactory.initElements(driver,this);
 }
 
-	void fromAndTo(String fromValue, String toValue){
-		from.sendKeys("");
-		to.sendKeys("");
+public	void fromAndTo(String fromValue, String toValue){
+		from.sendKeys(fromValue);
+		to.sendKeys(toValue);
 	}
 	
-	void selectDepart(String date){
+public	void selectDepart(String date) throws InterruptedException{
+		// //span[@class='ui-datepicker-month' and text()='June']/../../..//td/a[text()='145']  :: for any date picking 
+		////span[@class='ui-datepicker-month' and text()='September']/../../..//a[. = '13']   :: another method
 		DepartDate.click();
-		next.click();
+		while(!datepickerHeader.getText().equalsIgnoreCase("September")){
+			Thread.sleep(3000);
+			arrowButton.click();
+			}
+		
 		
 	}
 	
-	void selectAdults(){
+public	void selectAdults(){
+	
 		adults.click();
 		Select select = new Select(adults);
 		select.selectByVisibleText("2");
 	}
 	
-	void selectMore(){
+public void selectMore(){
 		more.click();
 		fclass.click();
 		Select select = new Select(fclass);

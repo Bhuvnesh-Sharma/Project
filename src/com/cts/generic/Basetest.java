@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-public class Basetest extends Constants {
+public class Basetest implements Constants {
 
 	
 	public WebDriver driver;
@@ -21,7 +21,7 @@ public class Basetest extends Constants {
 		driver=new ChromeDriver();
 		String url=Lib.getPpt(CONFIG_PATH,"URL");
 		driver.get(url);
-		//String strITO=Lib.getPpt(CONFIG_PATH,"ITO");
+		String strITO=Lib.getPpt(CONFIG_PATH,"ITO");
 		long ITO = Long.parseLong(strITO);
 		driver.manage().timeouts().implicitlyWait(ITO,TimeUnit.SECONDS);
 	}
