@@ -14,11 +14,15 @@ public class Lib {
 	// getting data from .properties file
 	public static String getPpt(String path,String key){
 		String v="";
+		String y="";
 		try{
 			Properties p=new Properties();
 			p.load(new FileInputStream(path));
 			v=p.getProperty(key);
+						
 		}
+		
+		
 		catch(Exception e){
 		}
 		return v;

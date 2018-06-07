@@ -17,12 +17,15 @@
 	<classpathentry kind="lib" path="jar/poi-scratchpad-3.17.jar"/>
 	<classpathentry kind="lib" path="jar/selenium-server-standalone-3.5.2.jar"/>
 	<classpathentry kind="lib" path="jar/xmlbeans-2.6.0.jar"/>
-	<classpathentry kind="lib" path="D:/GitProject/Extent reports/bson-3.0.4.jar"/>
-	<classpathentry kind="lib" path="D:/GitProject/Extent reports/extentreports-2.41.2.jar"/>
-	<classpathentry kind="lib" path="D:/GitProject/Extent reports/freemarker-2.3.23.jar"/>
-	<classpathentry kind="lib" path="D:/GitProject/Extent reports/jsoup-1.8.3.jar"/>
-	<classpathentry kind="lib" path="D:/GitProject/Extent reports/mongodb-driver-3.0.4.jar"/>
-	<classpathentry kind="lib" path="D:/GitProject/Extent reports/mongodb-driver-core-3.0.4.jar"/>
-	<classpathentry kind="lib" path="D:/GitProject/Extent reports/sqlite-jdbc-3.8.11.1.jar"/>
+	<classpathentry kind="lib" path="jar/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="jar/extentreports-3.1.5.jar"/>
+	<classpathentry kind="lib" path="jar/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="jar/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="jar/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="jar/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="jar/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="jar/jsoup-1.9.2.jar"/>
+	<classpathentry kind="lib" path="jar/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="jar/mongodb-driver-core-3.3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

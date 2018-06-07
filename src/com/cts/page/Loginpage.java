@@ -24,7 +24,10 @@ private WebElement arrowButton;
 @FindBy(xpath = "(//div/span[@class ='ui-datepicker-month' ])[2]")
 private WebElement datepickerHeader;
 
-@FindBy(xpath = "//input[@id = 'DepartDate']")
+@FindBy(xpath = "//span[@class='ui-datepicker-month' and text()='September']/../../..//a[. = '13']")
+private WebElement dateElement;
+
+@FindBy(xpath = "//select[@id = 'Adults']")
 private WebElement adults;
 
 
@@ -54,6 +57,8 @@ public	void selectDepart(String date) throws InterruptedException{
 			Thread.sleep(3000);
 			arrowButton.click();
 			}
+		Thread.sleep(2000);
+		dateElement.click();
 		
 		
 	}
@@ -71,4 +76,13 @@ public void selectMore(){
 		Select select = new Select(fclass);
 		select.selectByVisibleText("First");
 	}
+
+public void search(){
+		searchBtn.click();	
+	}
+	
 }
+
+
+
+
