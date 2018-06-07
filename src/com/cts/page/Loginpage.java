@@ -78,7 +78,8 @@ public void selectMore(){
 	}
 
 public void search(){
-		searchBtn.click();	
+		searchBtn.click();
+		System.out.println("done");
 	}
 	
 }
