@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class Loginpage {
+public class SearchFlights {
 
 
 @FindBy(xpath = "//input[@id = 'FromTag']")
@@ -40,7 +40,7 @@ private WebElement fclass;
 @FindBy(xpath = "//input[@id = 'SearchBtn']")
 private WebElement searchBtn;
 
-public Loginpage(WebDriver driver){
+public SearchFlights(WebDriver driver){
 	PageFactory.initElements(driver,this);
 }
 

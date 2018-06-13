@@ -39,6 +39,7 @@ public class BaseTest implements Constants {
 	@BeforeMethod(alwaysRun=true)
 	public void openApplication(){
 		driver=new ChromeDriver();
+		//driver.manage().window().maximize();
 		String url=Lib.getPpt(CONFIG_PATH,"URL");
 		driver.get(url);
 		String strITO=Lib.getPpt(CONFIG_PATH,"ITO");

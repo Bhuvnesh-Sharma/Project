@@ -1,37 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
-    <line>
-      <![CDATA[creation of objects]]>
-    </line>
-    <line>
-      <![CDATA[check ]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="26200" started-at="2018-06-07T06:38:30Z" finished-at="2018-06-07T06:38:56Z">
+  <suite name="Default suite" duration-ms="90158" started-at="2018-06-13T13:00:45Z" finished-at="2018-06-13T13:02:15Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="26200" started-at="2018-06-07T06:38:30Z" finished-at="2018-06-07T06:38:56Z">
-      <class name="com.cts.test.Validlogin">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:com.cts.test.Validlogin@1a8a8f7c]" name="openApplication" is-config="true" duration-ms="8252" started-at="2018-06-07T06:38:30Z" finished-at="2018-06-07T06:38:38Z">
+    <test name="Default test" duration-ms="90158" started-at="2018-06-13T13:00:45Z" finished-at="2018-06-13T13:02:15Z">
+      <class name="com.cts.test.SignInTest">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:com.cts.test.SignInTest@631330c]" name="openApplication" is-config="true" duration-ms="11012" started-at="2018-06-13T13:00:45Z" finished-at="2018-06-13T13:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="execute()[pri:0, instance:com.cts.test.Validlogin@1a8a8f7c]" name="execute" duration-ms="16583" started-at="2018-06-07T06:38:38Z" finished-at="2018-06-07T06:38:55Z">
+        <test-method status="PASS" signature="signInPerform()[pri:0, instance:com.cts.test.SignInTest@631330c]" name="signInPerform" duration-ms="8784" started-at="2018-06-13T13:00:56Z" finished-at="2018-06-13T13:01:05Z">
           <reporter-output>
-            <line>
-              <![CDATA[creation of objects]]>
-            </line>
-            <line>
-              <![CDATA[check ]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- execute -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.cts.test.Validlogin@1a8a8f7c]" name="closeApplication" is-config="true" duration-ms="1186" started-at="2018-06-07T06:38:55Z" finished-at="2018-06-07T06:38:56Z">
+        </test-method> <!-- signInPerform -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.cts.test.SignInTest@631330c]" name="closeApplication" is-config="true" duration-ms="1145" started-at="2018-06-13T13:01:05Z" finished-at="2018-06-13T13:01:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- com.cts.test.Validlogin -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:com.cts.test.SignInTest@631330c]" name="openApplication" is-config="true" duration-ms="7455" started-at="2018-06-13T13:01:06Z" finished-at="2018-06-13T13:01:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="priority1()[pri:1, instance:com.cts.test.SignInTest@631330c]" name="priority1" duration-ms="1" started-at="2018-06-13T13:01:13Z" finished-at="2018-06-13T13:01:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priority1 -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.cts.test.SignInTest@631330c]" name="closeApplication" is-config="true" duration-ms="970" started-at="2018-06-13T13:01:13Z" finished-at="2018-06-13T13:01:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:com.cts.test.SignInTest@631330c]" name="openApplication" is-config="true" duration-ms="6738" started-at="2018-06-13T13:01:14Z" finished-at="2018-06-13T13:01:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="priority2()[pri:2, instance:com.cts.test.SignInTest@631330c]" name="priority2" duration-ms="3" started-at="2018-06-13T13:01:21Z" finished-at="2018-06-13T13:01:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priority2 -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.cts.test.SignInTest@631330c]" name="closeApplication" is-config="true" duration-ms="1151" started-at="2018-06-13T13:01:21Z" finished-at="2018-06-13T13:01:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:com.cts.test.SignInTest@631330c]" name="openApplication" is-config="true" duration-ms="37104" started-at="2018-06-13T13:01:22Z" finished-at="2018-06-13T13:01:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="priority3()[pri:3, instance:com.cts.test.SignInTest@631330c]" name="priority3" duration-ms="1" started-at="2018-06-13T13:01:59Z" finished-at="2018-06-13T13:01:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priority3 -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.cts.test.SignInTest@631330c]" name="closeApplication" is-config="true" duration-ms="1105" started-at="2018-06-13T13:01:59Z" finished-at="2018-06-13T13:02:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:com.cts.test.SignInTest@631330c]" name="openApplication" is-config="true" duration-ms="6669" started-at="2018-06-13T13:02:00Z" finished-at="2018-06-13T13:02:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="priority4()[pri:4, instance:com.cts.test.SignInTest@631330c]" name="priority4" duration-ms="2" started-at="2018-06-13T13:02:07Z" finished-at="2018-06-13T13:02:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priority4 -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.cts.test.SignInTest@631330c]" name="closeApplication" is-config="true" duration-ms="1010" started-at="2018-06-13T13:02:07Z" finished-at="2018-06-13T13:02:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:com.cts.test.SignInTest@631330c]" name="openApplication" is-config="true" duration-ms="5886" started-at="2018-06-13T13:02:08Z" finished-at="2018-06-13T13:02:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="priority5()[pri:5, instance:com.cts.test.SignInTest@631330c]" name="priority5" duration-ms="2" started-at="2018-06-13T13:02:14Z" finished-at="2018-06-13T13:02:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priority5 -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.cts.test.SignInTest@631330c]" name="closeApplication" is-config="true" duration-ms="973" started-at="2018-06-13T13:02:14Z" finished-at="2018-06-13T13:02:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.cts.test.SignInTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

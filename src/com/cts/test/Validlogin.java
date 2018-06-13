@@ -12,15 +12,15 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.cts.generic.BaseTest;
-import com.cts.page.Loginpage;
+import com.cts.page.SearchFlights;
 
 //@Listeners(com.cts.generic.Extents.class)
 public class Validlogin extends BaseTest {
 
-	@Test
+	@Test(enabled = true)
 	public void execute() throws InterruptedException, IOException{
 		Reporter.log("creation of objects",true);
-		Loginpage lp = new Loginpage(driver);
+		SearchFlights lp = new SearchFlights(driver);
 		
 		lp.fromAndTo("Delhi", "Bangalore");
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
@@ -34,6 +34,12 @@ public class Validlogin extends BaseTest {
 		Thread.sleep(2000);
 		lp.search();
 		Thread.sleep(2000);
+		
+	/*@Test(priority = 1)
+	public void demo(){
+		System.out.println("priority 1");
+		}*/
+	
 		
 	}
 	
