@@ -10,6 +10,13 @@
           <include name="execute"/>
         </methods>
       </class> <!-- com.cts.test.Validlogin -->
+      <class name="com.cts.test.SignInTest">
+        <methods>
+          <include name="openApplication"/>
+          <include name="closeApplication"/>
+          <include name="signInPerform"/>
+        </methods>
+      </class> <!-- com.cts.test.SignInTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

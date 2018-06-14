@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Cleartrip Suite]">
+  <test thread-count="1" name="signIn(failed)">
     <classes>
-      <class name="com.cts.test.Validlogin">
-        <methods>
-          <include name="openApplication"/>
-          <include name="closeApplication"/>
-          <include name="execute"/>
-        </methods>
-      </class> <!-- com.cts.test.Validlogin -->
       <class name="com.cts.test.SignInTest">
         <methods>
           <include name="openApplication"/>
@@ -18,5 +11,5 @@
         </methods>
       </class> <!-- com.cts.test.SignInTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- signIn(failed) -->
+</suite> <!-- Failed suite [Cleartrip Suite] -->

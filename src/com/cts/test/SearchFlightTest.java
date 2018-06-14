@@ -15,9 +15,9 @@ import com.cts.generic.BaseTest;
 import com.cts.page.SearchFlights;
 
 //@Listeners(com.cts.generic.Extents.class)
-public class Validlogin extends BaseTest {
+public class SearchFlightTest extends BaseTest {
 
-	@Test(enabled = true)
+	@Test
 	public void execute() throws InterruptedException, IOException{
 		Reporter.log("creation of objects",true);
 		SearchFlights lp = new SearchFlights(driver);
